@@ -19,7 +19,7 @@ public class Main {
                 }
                 j++;
             }
-            if(i%j !=0){
+            if(i==j){
                 System.out.println(i);
             }
         }
