@@ -12,13 +12,15 @@ public class Main {
      */
     public static void printPrimeNumbers() {
         for(int i = 2;i<=100;i++){
-            for(int j = 2;j<Math.sqrt(i)+1;j++){
-                if(i%j == 0 && i!= j){
+            int j = 2;
+            while(j<Math.sqrt(i)+1){
+                if(i%j == 0){
                     break;
                 }
-                if(i%j != 0){
-                    System.out.println(i);
-                }
+                j++;
+            }
+            if(i%j !=0){
+                System.out.println(i);
             }
         }
     }
